@@ -36,8 +36,6 @@ function App() {
     // hook needs to be dependent on 'messages' otherwise it won't rebuild/refresh
   }, [messages]);
 
-  console.log(messages);
-
   return (
     <div className="app">
       <div className="app__body">
