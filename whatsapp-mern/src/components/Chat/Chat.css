@@ -22,7 +22,7 @@
   align-items: center;
   justify-content: space-between;
   /* width: 100%; */
-  color: lightgray;
+  color: gray;
 }
 
 .chat__headerInfo > h3 {

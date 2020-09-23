@@ -24,6 +24,7 @@ function App() {
     channel.bind("inserted", function (newMessage) {
       // append new data to messages
       // set message using ES6 spread operator + new message
+      // console.log("spread...messages", messages);
       setMessages([...messages, newMessage]);
     });
 
@@ -36,6 +37,7 @@ function App() {
     // hook needs to be dependent on 'messages' otherwise it won't rebuild/refresh
   }, [messages]);
 
+  console.log("messages from app >>>>>", messages);
   return (
     <div className="app">
       <div className="app__body">
